@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>AngularJS progress modal</title>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.8/angular.js"></script>
+        <script src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.10.0.js"></script>
+        <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+        <style type="text/css">
+            .wrap {
+                text-align : center;
+            }
+            .modal-dialog {
+                top : 40px;
+            }
+        </style>
+        <script src="progressBox.js"></script>
+        <script src="example.js"></script>
+    </head>
+    <body ng-app="example">
+        <div class="wrap">
+            <button class="btn btn-primary" ng-click="start()">Start</button>
+            <div>{{status}}</div>
+        </div>
+    </body>
+</html>
